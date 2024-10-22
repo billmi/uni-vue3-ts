@@ -1,0 +1,62 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "home"
+      }
+    },
+    {
+      "path": "pages/pinia/index",
+      "style": {
+        "navigationBarTitleText": "状态管理工具（pinia）"
+      }
+    },
+    {
+      "path": "pages/uview/index",
+      "style": {
+        "navigationBarTitleText": "uView 示例组件"
+      }
+    },
+    {
+      "path": "pages/unocss/index",
+      "style": {
+        "navigationBarTitleText": "UnoCSS 示例"
+      }
+    },
+    {
+      "path": "pages/uform/index",
+      "style": {
+        "navigationBarTitleText": "form排版"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的页面",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#2ca9e1",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue",
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  }
+}
